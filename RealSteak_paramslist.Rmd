@@ -5,7 +5,17 @@ author: "Author: UrMom"
 date: "`r format(Sys.Date(), '%A, %B, %d, %Y') `"
 output: html_document
 params:
-  region: "Pacific"
+  region: 
+    label:"Region:"
+    value: Mountain
+    input: select
+    choices: ["East North Central","East South Central", 
+              "Middle Atlantic","Mountain", "New England", 
+              "Pacific","South Atlantic", "West North Central",
+              "West South Central"]
+
+
+
 ---
 
 
